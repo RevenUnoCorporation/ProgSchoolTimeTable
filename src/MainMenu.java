@@ -3,16 +3,19 @@
 import java.util.Scanner;
 
 public class MainMenu {
-    public static void main(){
+    public static void main(String[] args){
         Scanner in = new Scanner(System.in);
         String kidName;
 
         System.out.println("\t by RavenNano");
         System.out.println("Enter '_help', but program to help you ^-^ ");
 
-        System.out.println("$> ");
+        System.out.print("$> ");
         String comm = in.nextLine();
 
-
+        switch (comm){
+            case "setAction":
+                ComJobLine.setAction();
+        }
     }
 }
