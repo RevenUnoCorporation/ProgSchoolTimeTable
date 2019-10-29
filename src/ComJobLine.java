@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class ComJobLine {
 
+    public static String dir = "/home/revenuno/IdeaProjects/SchoolTimeTable/tables/Class1/Monday/less2";
+
     public static void setAction(){
         Scanner in = new Scanner(System.in);
         int realLesson = 0;
@@ -54,6 +56,5 @@ public class ComJobLine {
             realLesson = 0;
 //------------------------------------------------------------- (-_- ) xex
         System.out.println("Сейчас ваш бл****, е***** ребёнок: ");
-        System.out.println(BFTable.schoolClass[kidClass][realDay][realLesson]);
     }
 }
