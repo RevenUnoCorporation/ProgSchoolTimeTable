@@ -9,7 +9,7 @@ public class MainMenu {
 
         System.out.println("\t by RavenNano");
         System.out.println("Enter '_help', but program to help you ^-^ ");
-       System.out.println(TableJobing.setLesson("/home/revenuno/IdeaProjects/SchoolTimeTable/tables/Class1/Monday/less2"));
+        System.out.println(TableJobing.setLesson("/home/revenuno/IdeaProjects/SchoolTimeTable/tables/Class1/Monday/less0"));
 
         System.out.print("$> ");
         String comm = in.nextLine();

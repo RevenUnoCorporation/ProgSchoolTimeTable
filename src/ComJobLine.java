@@ -38,31 +38,29 @@ public class ComJobLine {
         }
 
 //----------------------------------------------------------------   (-_- ) xex
-
-        if(realTime <= 8.00){
+        if(realTime < 8.00)
             realLesson = "0";
-        }if (realTime >= 8.00 && realTime <= 8.40){
+        if (realTime >= 8.00 && realTime < 8.40)
             realLesson = "1";
-        }if(realTime >= 8.40 && realTime <= 9.00){
+        if(realTime >= 8.40 && realTime < 9.00)
             realLesson = "0";
-        }if(realTime <= 9.00 && realTime <= 9.40){
+        if(realTime >= 9.00 && realTime < 9.40)
             realLesson = "2";
-        }if(realTime >= 9.40 && realTime <= 10.00){
+        if(realTime >= 9.40 && realTime < 10.00)
             realLesson = "0";
-        }if (realTime >= 10.00 && realTime <= 10.40){
+        if (realTime >= 10.00 && realTime < 10.40)
             realLesson = "3";
-        }if(realTime >= 10.40 && realTime <= 11.00){
+        if(realTime >= 10.40 && realTime < 11.00)
             realLesson = "0";
-        }if(realTime >= 11.00 && realTime <= 11.40){
+        if(realTime >= 11.00 && realTime < 11.40)
             realLesson = "4";
-        }if(realTime >= 11.40 && realTime <= 12.00)
+        if(realTime >= 11.40 && realTime < 12.00)
             realLesson = "0";
 //------------------------------------------------------------- (-_- ) xex
 
         lesDir = "/home/revenuno/IdeaProjects/SchoolTimeTable/tables/" + "Class" + kidClass + "/" + realDay + "/" + "less" + realLesson;
         System.out.println(lesDir);
-        System.out.println("Сейчас ваш бл****, е***** ребёнок на: ");
-        TableJobing.setLesson(lesDir);
+        System.out.println("Сейчас ваш бл****, е***** ребёнок на: " + TableJobing.setLesson(lesDir));
 
     }
 }
